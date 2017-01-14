@@ -28,13 +28,13 @@ DESC="TestService"
 EXEC="/usr/bin/jsvc"
 
 # The path to the folder containing TestService.jar
-FILE_PATH="/home/[Insert Name]/Repositories/TestService/build"
+FILE_PATH="/home/cdnutter/Repositories/TestService/build"
 
 # The path to the folder containing the java runtime
 JAVA_HOME="/usr/lib/jvm/java-8-oracle"
 
 # Our classpath including our jar file and the Apache Commons Daemon library
-CLASS_PATH="$FILE_PATH/TestService.jar:[Insert Name]/Repositories/TestService/lib/commons-daemon-1.0.15.jar"
+CLASS_PATH="$FILE_PATH/TestService.jar:/home/cdnutter/Repositories/TestService/lib/commons-daemon-1.0.15.jar"
 
 # The fully qualified name of the class to execute
 CLASS="team4141.Service"
@@ -43,7 +43,7 @@ CLASS="team4141.Service"
 ARGS=""
 
 #The user to run the daemon as
-USER="[Insert Username]"
+USER="cdnutter"
 
 # The file that will contain our process identification number (pid) for other scripts/programs that need to access it.
 PID="/var/run/$NAME.pid"

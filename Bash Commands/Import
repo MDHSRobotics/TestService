@@ -1,0 +1,9 @@
+#!/bin/bash  
+read -p "Press [Enter] key to Proceed"
+cd ..
+sudo apt-get install jsvc
+sudo cp TestService.sh /etc/init.d/
+cd /etc/init.d/
+sudo chmod 755 TestService.sh
+read -p "Press [Enter] key to Auto-Run Script at Launch"
+sudo update-rc.d TestService.sh defaults

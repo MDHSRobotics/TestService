@@ -1,0 +1,3 @@
+#!/bin/bash
+cd $HOME/Repositories/TestService/build/
+sudo vi /log/TestService.out
