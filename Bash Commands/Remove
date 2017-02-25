@@ -1,4 +1,0 @@
-#!/bin/bash
-read -p "Press [Enter] key to Stop Script"
-cd /etc/init.d/
-sudo update-rc.d TestService.sh remove
