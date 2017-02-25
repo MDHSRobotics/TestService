@@ -1,4 +1,7 @@
-bin
+/Release/*
+/Debug/*
+/bin/*
+/bin/
 .settings
 .classpath
 .project
